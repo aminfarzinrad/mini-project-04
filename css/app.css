@@ -22,16 +22,17 @@ body{
     min-height: 100vh;
 }
 .dropdown{
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 .icon{
   width: 22px;
   height: 22px;
+  transition: all 180ms ease-in 0.80ms;
 }
 .dropdown-btn{
   position: absolute;
-  top: -59px;
+  top: -50px;
   width: 160px;
   height: 50px;
   gap: 6px;
@@ -43,6 +44,7 @@ body{
   color: #FAFAFA;
   cursor: pointer;
   font-size: 18px;
+  transition: all 180ms ease-in 0.80ms;
 }
 .dropdown-content{
   width: 160px;
@@ -51,6 +53,8 @@ body{
   background-color: #FAFAFA;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
   visibility: hidden;
+  transition: all 180ms ease-in 0.80ms;
+  opacity: 0;
 }
 .dropdown-content-link{
   text-decoration: none;
@@ -61,6 +65,14 @@ body{
 .dropdown-content-link:last-child{
   margin: 0;
 }
+.dropdown:hover .dropdown-btn{
+  background-color: #1565C0;
+}
+.dropdown:hover .icon{
+  transform: rotate(180deg);
+}
 .dropdown:hover .dropdown-content{
   visibility: visible;
+  opacity: 1;
+  transform: translateY(12px);
 }
