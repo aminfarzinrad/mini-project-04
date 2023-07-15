@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
