@@ -47,6 +47,7 @@ body{
   border-radius: 6px;
   background-color: #FAFAFA;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 .dropdown-content-link{
   text-decoration: none;
@@ -56,4 +57,7 @@ body{
 }
 .dropdown-content-link:last-child{
   margin: 0;
+}
+.dropdown-btn:hover + .dropdown-content{
+  display: block;
 }
