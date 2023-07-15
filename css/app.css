@@ -21,3 +21,39 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+.dropdown{
+  text-align: center;
+}
+.icon{
+  width: 22px;
+  height: 22px;
+}
+.dropdown-btn{
+  width: 160px;
+  height: 50px;
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #1976D2;
+  color: #FAFAFA;
+  cursor: pointer;
+  font-size: 18px;
+}
+.dropdown-content{
+  width: 160px;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+.dropdown-content-link{
+  text-decoration: none;
+  color: #212121;
+  display: block;
+  margin-bottom: 6px;
+}
+.dropdown-content-link:last-child{
+  margin: 0;
+}
